@@ -13,15 +13,19 @@ An simple and easy to use cover statusbar HUD
 - Import the header file：#import `"XAStatusBarHUD.h"`
 
 ##ShowInfoMessage
+
 ```objc
  [XAStatusBarHUD showInfoWithTitle:@"Normal" image:nil];
 ```
+
 ##ShowLoadingMessage
+
 - HUD Keep always show
 
 ```objc
  [XAStatusBarHUD showLoadingWithTitle:@"Loading" image:nil];
 ```
+
 
 ##CustomHUD
 
@@ -31,10 +35,11 @@ An simple and easy to use cover statusbar HUD
 [XAStatusBarHUD setFont:[UIFont boldSystemFontOfSize:14]];
 [XAStatusBarHUD setTitleColor:[UIColor whiteColor]];
 [XAStatusBarHUD setBackgroundColor:[UIColor grayColor]];
-[]XAStatusBarHUD setStayTimer:2];
+[XAStatusBarHUD setStayTimer:2];
 ```
 
 - custormMessage
+
 
 ```objc
 //自定义控件
@@ -45,3 +50,5 @@ label.textColor  =[UIColor redColor];
 
 [XAStatusBarHUD showCustomWithTitle:@"Custom" image:[UIImage imageNamed:@"check_1139091_easyicon.net"] loading:NO customView:label];
 ```
+
+
